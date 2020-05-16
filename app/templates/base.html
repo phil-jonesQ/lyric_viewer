@@ -1,0 +1,14 @@
+<html>
+    <head>
+      {% if version %}
+      <title>Lyric Viewer {{ version }}</title>
+      {% else %}
+      <title>Lyric Viewer Production</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Lyric Viewer <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
